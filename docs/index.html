@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pre-CAS Verification &amp; Student Completion Training | African Students Centre</title>
+<meta name="description" content="Protect your UKVI sponsor licence. Pre-CAS document, financial, address and employment verification across Africa, plus completion-readiness training that keeps BCA refusal, enrolment and completion rates on target.">
+<link rel="canonical" href="https://africanstudentscentre.com/">
+<meta name="theme-color" content="#051912">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://africanstudentscentre.com/">
+<meta property="og:title" content="Grow African enrolment without risking your sponsor licence">
+<meta property="og:description" content="Pre-CAS verification across Africa and completion-readiness training for admitted students, built around UKVI's 2026 BCA thresholds.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23051912'/%3E%3Cpath d='M16 5l9 4v6c0 6-4 10-9 12-5-2-9-6-9-12V9z' fill='%2310b981'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "African Students Centre",
+  "url": "https://africanstudentscentre.com/",
+  "description": "Pre-CAS verification and completion-readiness training for universities that admit African students.",
+  "areaServed": ["GB", "Africa"],
+  "serviceType": ["Pre-CAS applicant verification", "International student compliance training"]
+}
+</script>
+<style>
+:root{
+  --bg:#051912;--card:#0b2b20;--surface:#123d2e;--line:#1e4d3d;
+  --green:#10b981;--neon:#34d399;--glow:rgba(16,185,129,.15);
+  --text:#f8fafc;--muted:#a7b6c8;--amber:#fbbf24;--red:#f87171;
+  --radius:16px;--ease:.25s cubic-bezier(.4,0,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:var(--neon)}
+:focus-visible{outline:2px solid var(--neon);outline-offset:3px;border-radius:4px}
+.container{max-width:1180px;margin:0 auto;padding:0 1.5rem}
+.skip{position:absolute;left:-999px;top:0;background:var(--green);color:#03140e;padding:.6rem 1rem;z-index:2000;font-weight:700}
+.skip:focus{left:1rem;top:1rem}
+section{padding:96px 0}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--neon);margin-bottom:.9rem}
+h2{font-size:clamp(1.8rem,3.2vw,2.4rem);line-height:1.2;letter-spacing:-.02em;font-weight:800;margin-bottom:1rem}
+.lead{color:var(--muted);font-size:1.08rem;max-width:680px}
+.center{text-align:center}.center .lead{margin:0 auto}
+.section-head{margin-bottom:3rem}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.5rem;border-radius:10px;font:600 .98rem/1.2 inherit;text-decoration:none;cursor:pointer;transition:var(--ease);border:1px solid transparent}
+.btn-primary{background:linear-gradient(135deg,#059669,#10b981);color:#fff;box-shadow:0 4px 20px rgba(16,185,129,.3)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 26px rgba(16,185,129,.5)}
+.btn-outline{background:transparent;color:var(--text);border-color:var(--line)}
+.btn-outline:hover{border-color:var(--green);background:var(--surface)}
+.btn[disabled]{opacity:.6;cursor:wait;transform:none}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;background:rgba(5,25,18,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:1000}
+nav{display:flex;justify-content:space-between;align-items:center;height:72px;gap:1rem}
+.logo{display:flex;align-items:center;gap:.6rem;color:var(--text);text-decoration:none;font-weight:800;letter-spacing:-.02em;font-size:1.1rem}
+.logo small{display:block;font-size:.68rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.nav-links{display:flex;gap:1.75rem;list-style:none;align-items:center}
+.nav-links a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.94rem;transition:var(--ease)}
+.nav-links a:hover{color:var(--neon)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:8px;color:var(--text);padding:.45rem .6rem;cursor:pointer}
+
+/* hero */
+.hero{padding:170px 0 64px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:60px;left:50%;transform:translateX(-50%);width:760px;height:420px;background:radial-gradient(circle,rgba(16,185,129,.14) 0%,transparent 70%);z-index:-1}
+.badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--surface);border:1px solid var(--line);padding:.4rem 1rem;border-radius:50px;font-size:.78rem;font-weight:600;color:var(--neon);letter-spacing:.04em;margin-bottom:1.5rem}
+.badge .dot{width:8px;height:8px;border-radius:50%;background:var(--neon);box-shadow:0 0 0 4px var(--glow)}
+.hero h1{font-size:clamp(2.2rem,5vw,3.75rem);font-weight:800;letter-spacing:-.03em;line-height:1.12;max-width:900px;margin:0 auto 1.4rem}
+.hero h1 em{font-style:normal;color:var(--neon)}
+.hero p.lead{margin:0 auto 2.2rem;font-size:1.15rem;max-width:740px}
+.cta-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.hero-note{margin-top:1.4rem;font-size:.86rem;color:var(--muted)}
+
+/* thresholds */
+.thresholds{padding:0 0 40px}
+.t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.t-card{background:var(--card);border:1px solid var(--line);padding:1.75rem;border-radius:var(--radius);text-align:center}
+.t-value{font-size:2.6rem;font-weight:800;color:var(--neon);line-height:1.1}
+.t-label{font-weight:600;margin:.4rem 0 .3rem}
+.t-was{font-size:.86rem;color:var(--muted)}
+.t-source{margin-top:1rem;text-align:center;font-size:.8rem;color:var(--muted)}
+
+/* problem */
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.p-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;display:flex;flex-direction:column;gap:.7rem}
+.p-card h3{font-size:1.05rem;line-height:1.35}
+.p-card p{color:var(--muted);font-size:.93rem;flex:1}
+.tag{align-self:flex-start;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:.25rem .6rem;border-radius:6px;background:rgba(248,113,113,.12);color:var(--red);border:1px solid rgba(248,113,113,.3)}
+
+/* services */
+.alt{background:linear-gradient(180deg,var(--bg) 0%,#071f17 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1.75rem}
+.s-card{background:var(--card);border:1px solid var(--line);padding:2.25rem;border-radius:20px;display:flex;flex-direction:column;gap:1.25rem;transition:var(--ease)}
+.s-card:hover{border-color:var(--green)}
+.s-num{width:46px;height:46px;border-radius:12px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;color:var(--neon);font-weight:800}
+.s-card h3{font-size:1.35rem}
+.s-card .protects{font-size:.85rem;color:var(--muted)}
+.s-card .protects b{color:var(--neon);font-weight:600}
+.ticks{list-style:none;display:flex;flex-direction:column;gap:.9rem}
+.ticks li{display:flex;gap:.75rem;color:var(--muted);font-size:.95rem}
+.ticks li::before{content:"✓";color:var(--neon);font-weight:800;flex-shrink:0}
+.ticks strong{color:var(--text)}
+
+/* steps */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;counter-reset:step}
+.steps li{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem 1.2rem;counter-increment:step}
+.steps li::before{content:"0" counter(step);display:block;font-weight:800;color:var(--neon);font-size:.85rem;margin-bottom:.5rem}
+.steps h3{font-size:1rem;margin-bottom:.35rem}
+.steps p{font-size:.88rem;color:var(--muted)}
+.steps .when{display:inline-block;margin-top:.7rem;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--amber)}
+
+/* self assessment */
+.assess{display:grid;grid-template-columns:1fr 1.1fr;gap:2.5rem;align-items:start}
+.assess-box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:2rem}
+fieldset{border:0;margin-bottom:1.4rem}
+legend{font-weight:600;font-size:.95rem;margin-bottom:.6rem}
+.opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.opts label{position:relative;cursor:pointer}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts span{display:inline-block;padding:.5rem .9rem;border:1px solid var(--line);border-radius:8px;font-size:.88rem;color:var(--muted);transition:var(--ease)}
+.opts input:checked+span{border-color:var(--green);background:var(--surface);color:var(--text)}
+.opts input:focus-visible+span{outline:2px solid var(--neon);outline-offset:2px}
+.result{display:none;margin-top:.5rem;padding:1.4rem;border-radius:14px;border:1px solid var(--line);background:var(--bg)}
+.result.show{display:block}
+.result h3{font-size:1.15rem;margin-bottom:.4rem}
+.result p{color:var(--muted);font-size:.93rem;margin-bottom:1rem}
+.result.green h3{color:var(--neon)}.result.amber h3{color:var(--amber)}.result.red h3{color:var(--red)}
+.disclaimer{font-size:.78rem;color:var(--muted);margin-top:1rem}
+
+/* trust */
+.trust-list{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}
+.trust-list li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.2rem;font-size:.92rem;color:var(--muted)}
+.trust-list strong{display:block;color:var(--text);margin-bottom:.2rem}
+
+/* faq */
+.faq{max-width:820px;margin:0 auto}
+details{border-bottom:1px solid var(--line);padding:1.2rem 0}
+summary{cursor:pointer;font-weight:600;font-size:1.02rem;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--neon);font-weight:700;font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"−"}
+details p{color:var(--muted);margin-top:.7rem;font-size:.95rem}
+
+/* form */
+.form-wrap{max-width:780px;margin:0 auto;background:var(--card);border:1px solid var(--line);padding:2.75rem;border-radius:24px;box-shadow:0 20px 40px rgba(0,0,0,.4)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 1.25rem}
+.field{display:flex;flex-direction:column;gap:.45rem;margin-bottom:1.25rem}
+.field.full{grid-column:1/-1}
+label.l{font-size:.85rem;font-weight:600}
+label.l .opt{color:var(--muted);font-weight:400}
+input,select,textarea{width:100%;background:var(--bg);border:1px solid var(--line);padding:.85rem 1rem;border-radius:8px;color:var(--text);font:400 .95rem/1.4 inherit;transition:var(--ease)}
+input::placeholder,textarea::placeholder{color:#6b8196}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px var(--glow)}
+input:user-invalid,select:user-invalid{border-color:var(--red)}
+select{appearance:none;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2'%3e%3cpolyline points='6 9 12 15 18 9'/%3e%3c/svg%3e");background-repeat:no-repeat;background-position:right 1rem center;background-size:1rem;padding-right:2.5rem}
+.check{display:flex;gap:.75rem;align-items:flex-start;font-size:.9rem;color:var(--muted)}
+.check input{width:18px;height:18px;margin-top:.15rem;accent-color:var(--green);flex-shrink:0}
+.hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.form-error{display:none;background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.4);color:#fecaca;padding:.8rem 1rem;border-radius:8px;font-size:.9rem;margin-bottom:1rem}
+.success{display:none;text-align:center;padding:2rem 0}
+.success h3{color:var(--neon);font-size:1.5rem;margin-bottom:.8rem}
+.success p{color:var(--muted)}
+
+footer{border-top:1px solid var(--line);padding:2.5rem 0;color:var(--muted);font-size:.88rem}
+.foot{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+.foot a{color:var(--muted)}.foot a:hover{color:var(--neon)}
+.foot ul{list-style:none;display:flex;gap:1.25rem;flex-wrap:wrap}
+
+@media (max-width:1000px){
+  .grid-4{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .assess{grid-template-columns:1fr}
+}
+@media (max-width:820px){
+  .menu-btn{display:block}
+  .nav-links{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:.5rem 1.5rem 1.25rem}
+  .nav-links.open{display:flex}
+  .nav-links li a{display:block;padding:.75rem 0}
+  .nav-cta{display:none}
+  .t-grid,.grid-2,.trust-list{grid-template-columns:1fr}
+  section{padding:72px 0}
+  .hero{padding:130px 0 48px}
+}
+@media (max-width:560px){
+  .grid-4,.steps,.form-grid{grid-template-columns:1fr}
+  .form-wrap{padding:1.75rem 1.25rem}
+  .s-card{padding:1.6rem}
+  .cta-row .btn{width:100%}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="container">
+    <nav aria-label="Main">
+      <a class="logo" href="/" aria-label="African Students Centre home">
+        <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#123d2e"/><path d="M16 5l9 4v6c0 6-4 10-9 12-5-2-9-6-9-12V9z" fill="#10b981"/><path d="M12 16l3 3 5-6" stroke="#051912" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>African Students Centre<small>Compliance &amp; Student Success</small></span>
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="navlinks" aria-label="Open menu">☰</button>
+      <ul class="nav-links" id="navlinks">
+        <li><a href="#problem">The risk</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">How it works</a></li>
+        <li><a href="#assessment">Risk check</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#audit" class="btn btn-primary nav-cta">Book an audit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="badge"><span class="dot"></span> For UK international admissions &amp; compliance teams</div>
+    <h1>Grow African enrolment <em>without risking your sponsor licence.</em></h1>
+    <p class="lead">Since 1 June 2026, UKVI's Basic Compliance Assessment allows a visa refusal rate of under 5% and expects at least 95% of CAS holders to enrol. We verify African applicants on the ground before you issue a CAS, then prepare admitted students to arrive, enrol and complete.</p>
+    <div class="cta-row">
+      <a href="#audit" class="btn btn-primary">Book an institutional compliance audit</a>
+      <a href="#assessment" class="btn btn-outline">Check your risk profile in 60 seconds</a>
+    </div>
+    <p class="hero-note">Document, address, employment and financial verification across African markets · UK GDPR-aligned data handling</p>
+  </div>
+</section>
+
+<!-- THRESHOLDS -->
+<div class="thresholds" id="bca">
+  <div class="container">
+    <div class="t-grid">
+      <div class="t-card">
+        <div class="t-value">&lt; 5%</div>
+        <div class="t-label">Visa refusal rate</div>
+        <div class="t-was">Previously under 10%</div>
+      </div>
+      <div class="t-card">
+        <div class="t-value">≥ 95%</div>
+        <div class="t-label">Enrolment rate</div>
+        <div class="t-was">Previously 90% or more</div>
+      </div>
+      <div class="t-card">
+        <div class="t-value">≥ 85%</div>
+        <div class="t-label">Course completion rate</div>
+        <div class="t-was">Rising to 90% from 1 June 2027</div>
+      </div>
+    </div>
+    <p class="t-source">UKVI Basic Compliance Assessment thresholds for assessments from 1 June 2026, now scored Red / Amber / Green. Missing any one metric can put a sponsor in the red.</p>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section id="problem">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">The risk</span>
+      <h2>Where African intakes put BCA metrics at risk</h2>
+      <p class="lead">Universities don't withdraw CAS or offers lightly. They do it because a handful of avoidable cases can push a whole institution into the red. The problems are predictable, and they can be caught early.</p>
+    </div>
+    <div class="grid-4">
+      <article class="p-card">
+        <span class="tag">Refusal rate</span>
+        <h3>Finances you can't verify from the UK</h3>
+        <p>Bank statements, sponsor letters and loan documents that can't be checked against the issuing bank or sponsor, or funds that weren't held for the full required period.</p>
+      </article>
+      <article class="p-card">
+        <span class="tag">Refusal rate</span>
+        <h3>Credibility and genuine-student doubts</h3>
+        <p>Unexplained gaps in study or work, a course that doesn't fit the applicant's history, or an applicant who can't explain their own plans at interview.</p>
+      </article>
+      <article class="p-card">
+        <span class="tag">Enrolment rate</span>
+        <h3>CAS holders who never arrive</h3>
+        <p>Late visa decisions, funding that falls through, or students who quietly choose another offer. Every no-show counts against the 95% target.</p>
+      </article>
+      <article class="p-card">
+        <span class="tag">Completion rate</span>
+        <h3>Students who leave mid-course</h3>
+        <p>Currency shocks, working beyond visa limits, unfamiliar assessment styles and isolation. These are the most common reasons students withdraw in year one.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="alt">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Services</span>
+      <h2>Verification before the CAS. Readiness after the offer.</h2>
+      <p class="lead">Use either service on its own, or both together as one pipeline from application to the end of year one.</p>
+    </div>
+    <div class="grid-2">
+      <article class="s-card">
+        <div class="s-num">01</div>
+        <h3>Pre-CAS verification &amp; risk review</h3>
+        <p class="protects">Protects your <b>refusal rate</b> and <b>enrolment rate</b></p>
+        <ul class="ticks">
+          <li><div><strong>Documents checked at the source.</strong> We confirm academic transcripts, certificates and identity documents directly with the issuing institutions and authorities.</div></li>
+          <li><div><strong>Finances that will survive scrutiny.</strong> We check bank statements, sponsor relationships and loan letters against the issuing bank or sponsor, and against the maintenance rules.</div></li>
+          <li><div><strong>Address and employment checks.</strong> Our local teams confirm physical addresses and work history with employers in the applicant's country.</div></li>
+          <li><div><strong>Gap and intent review.</strong> We set out unexplained gaps and course-fit concerns, with the evidence, so your team can decide before issuing a CAS.</div></li>
+        </ul>
+      </article>
+      <article class="s-card">
+        <div class="s-num">02</div>
+        <h3>Completion-readiness training</h3>
+        <p class="protects">Protects your <b>enrolment rate</b> and <b>completion rate</b></p>
+        <ul class="ticks">
+          <li><div><strong>Credibility interview preparation.</strong> Mock interviews so genuine students can explain their study plans clearly and confidently.</div></li>
+          <li><div><strong>Visa conditions, explained plainly.</strong> Term-time work limits, attendance and reporting duties, and what happens when students break them.</div></li>
+          <li><div><strong>Planning for years two and three.</strong> We check how fees will be paid for the whole course and plan for currency swings, so a weak naira or cedi doesn't end a degree.</div></li>
+          <li><div><strong>Academic and first-month transition.</strong> Referencing, academic integrity, independent study, and what to do before falling behind on fees or coursework.</div></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">How it works</span>
+      <h2>One pipeline from application to year one</h2>
+      <p class="lead">You make every admission and CAS decision. We give you the evidence to make it, and we prepare the students you admit.</p>
+    </div>
+    <ol class="steps">
+      <li><h3>Referral</h3><p>Your team sends us applicants through a secure portal, with the student's consent.</p><span class="when">Offer stage</span></li>
+      <li><h3>Verification</h3><p>We check documents, addresses, employment and finances in the applicant's country.</p><span class="when">Pre-CAS</span></li>
+      <li><h3>Risk report</h3><p>You get a clear, evidence-based risk rating for each applicant, with any red flags explained.</p><span class="when">Before CAS issue</span></li>
+      <li><h3>Readiness training</h3><p>Admitted students complete interview preparation, visa-conditions training and pre-arrival modules.</p><span class="when">Pre-departure</span></li>
+      <li><h3>Year-one check-ins</h3><p>Check-ins at months 1, 3 and 6 spot students at risk early and refer them to your support services.</p><span class="when">In study</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- SELF ASSESSMENT -->
+<section id="assessment" class="alt">
+  <div class="container assess">
+    <div>
+      <span class="eyebrow">60-second risk check</span>
+      <h2>How exposed is your African intake?</h2>
+      <p class="lead">Answer four questions for an indicative rating, using the same Red / Amber / Green bands UKVI now applies. Then book an audit and we'll look at your real pipeline.</p>
+      <ul class="trust-list" style="grid-template-columns:1fr">
+        <li><strong>No data leaves your browser</strong>Your answers stay on this page unless you choose to send them with an audit request.</li>
+      </ul>
+    </div>
+    <div class="assess-box">
+      <form id="riskForm">
+        <fieldset>
+          <legend>1. How large is your annual intake from Africa?</legend>
+          <div class="opts">
+            <label><input type="radio" name="q1" value="1" required><span>Under 100</span></label>
+            <label><input type="radio" name="q1" value="2"><span>100–500</span></label>
+            <label><input type="radio" name="q1" value="3"><span>500+</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>2. How do you verify applicants' financial documents today?</legend>
+          <div class="opts">
+            <label><input type="radio" name="q2" value="0" required><span>Direct with the issuing bank</span></label>
+            <label><input type="radio" name="q2" value="2"><span>Desk review only</span></label>
+            <label><input type="radio" name="q2" value="3"><span>We rely on UKVI</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>3. How many African CAS holders failed to enrol last cycle?</legend>
+          <div class="opts">
+            <label><input type="radio" name="q3" value="0" required><span>Under 5%</span></label>
+            <label><input type="radio" name="q3" value="2"><span>5–10%</span></label>
+            <label><input type="radio" name="q3" value="3"><span>Over 10% / not tracked</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>4. Do admitted students get pre-arrival training on visa conditions and fees?</legend>
+          <div class="opts">
+            <label><input type="radio" name="q4" value="0" required><span>Yes, a structured programme</span></label>
+            <label><input type="radio" name="q4" value="2"><span>Emails and a webinar</span></label>
+            <label><input type="radio" name="q4" value="3"><span>No</span></label>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primary" style="width:100%">See my risk rating</button>
+        <div class="result" id="riskResult" role="status" aria-live="polite">
+          <h3 id="riskTitle"></h3>
+          <p id="riskText"></p>
+          <a href="#audit" class="btn btn-primary" id="riskCta">Book an audit of my pipeline</a>
+        </div>
+        <p class="disclaimer">This is an indicative rating for discussion. It is not a UKVI assessment and does not predict your BCA outcome.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST / DATA -->
+<section id="trust">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Data protection</span>
+      <h2>Built for sensitive applicant data</h2>
+      <p class="lead">Financial and identity records need careful handling. We work as your data processor under a written data processing agreement, and we only verify applicants who have consented.</p>
+    </div>
+    <ul class="trust-list">
+      <li><strong>UK GDPR &amp; Data Protection Act 2018</strong>We process data on your instructions, keep it only for the agreed period, and send it to you securely.</li>
+      <li><strong>African data protection laws</strong>We work under the rules of each country where we verify, including Nigeria's NDPA 2023, South Africa's POPIA, Kenya's DPA 2019 and Ghana's DPA 2012.</li>
+      <li><strong>Applicant consent first</strong>Applicants are told what we check and why before any verification starts.</li>
+      <li><strong>Evidence, not opinions</strong>Every flag in a risk report links to the source we checked, so your decision can be audited.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="alt">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions compliance teams ask us</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Are you a recruitment agent?</summary>
+        <p>No. We work for your institution as an independent verification and training partner. We don't recruit students or sell courses, and our reports aren't shaped by whether an applicant enrols.</p>
+      </details>
+      <details>
+        <summary>Do you decide who gets a CAS?</summary>
+        <p>No. Every admission and CAS decision stays with your university. We give you verified evidence and a clear risk rating so your team can decide quickly and defend the decision if asked.</p>
+      </details>
+      <details>
+        <summary>Which countries do you cover?</summary>
+        <p>We verify documents, addresses and work history across African markets, with the deepest coverage in the countries that send the most students to the UK. Tell us your applicant mix and we'll confirm coverage and turnaround for each country.</p>
+      </details>
+      <details>
+        <summary>Does this replace UKVI's own checks?</summary>
+        <p>No. UKVI still makes the visa decision. Our job is to catch the problems that would lead to a refusal before you issue the CAS, while there's still time to resolve them or reconsider.</p>
+      </details>
+      <details>
+        <summary>How do we start?</summary>
+        <p>Most partners start with a pilot on one intake. We agree a sample of applicants, run full verification and readiness training, and compare their refusal and enrolment results with the rest of your cohort.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section id="audit">
+  <div class="container">
+    <div class="form-wrap">
+      <div class="section-head center" style="margin-bottom:2rem">
+        <span class="eyebrow">Book an audit</span>
+        <h2>Request an institutional compliance audit</h2>
+        <p class="lead">Tell us about your African applicant pipeline. A compliance specialist will reply within one working day to arrange a call.</p>
+      </div>
+
+      <form id="auditForm" action="https://formsubmit.co/john@africanstudentscentre.com" method="post" novalidate>
+        <input type="hidden" name="_subject" value="Audit request: africanstudentscentre.com">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://africanstudentscentre.com/thank-you.html">
+        <div class="form-error" id="formError" role="alert"></div>
+        <div class="form-grid">
+          <div class="field">
+            <label class="l" for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" autocomplete="given-name" maxlength="80" required>
+          </div>
+          <div class="field">
+            <label class="l" for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" autocomplete="family-name" maxlength="80" required>
+          </div>
+          <div class="field">
+            <label class="l" for="email">Work email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="name@university.ac.uk" maxlength="160" required>
+          </div>
+          <div class="field">
+            <label class="l" for="institution">Institution</label>
+            <input type="text" id="institution" name="institution" autocomplete="organization" maxlength="160" required>
+          </div>
+          <div class="field">
+            <label class="l" for="role">Your role</label>
+            <select id="role" name="role" required>
+              <option value="" selected disabled>Select your role</option>
+              <option>Director / Head of International Compliance</option>
+              <option>Head of International Admissions</option>
+              <option>Pro-Vice-Chancellor (International)</option>
+              <option>CAS / Visa Compliance Officer</option>
+              <option>Senior International Officer</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="l" for="intake">Annual African intake <span class="opt">(optional)</span></label>
+            <select id="intake" name="intake">
+              <option value="" selected>Select a range</option>
+              <option>1–100 students</option>
+              <option>101–500 students</option>
+              <option>501–1,000 students</option>
+              <option>1,000+ students</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label class="l" for="focus">What do you need most?</label>
+            <select id="focus" name="focus" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Pre-CAS document &amp; financial verification</option>
+              <option>Student completion-readiness training</option>
+              <option>Both: the full pipeline</option>
+              <option>Advice / general enquiry</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label class="l" for="message">Anything we should know? <span class="opt">(optional)</span></label>
+            <textarea id="message" name="message" rows="4" maxlength="3000" placeholder="E.g. your next intake date, the countries you recruit from, or the BCA metric you're most worried about."></textarea>
+          </div>
+          <div class="hp" aria-hidden="true">
+            <label for="website">Leave this field empty</label>
+            <input type="text" id="website" name="_honey" tabindex="-1" autocomplete="off">
+          </div>
+          <input type="hidden" name="riskRating" id="riskRatingField">
+          <div class="field full">
+            <label class="check"><input type="checkbox" name="consent" value="yes" required> <span>I agree that African Students Centre may use these details to respond to my enquiry, as described in the <a href="privacy.html">privacy notice</a>.</span></label>
+          </div>
+          <div class="field full">
+            <button type="submit" class="btn btn-primary" style="width:100%;padding:1rem">Request my audit</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="success" id="success" role="status" aria-live="polite" tabindex="-1">
+        <h3>Thank you. Your request has been received.</h3>
+        <p>A compliance specialist will reply within one working day to arrange a call about your applicant pipeline.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container foot">
+    <p>&copy; <span id="yr">2026</span> African Students Centre. Verification and completion training for universities that admit African students.</p>
+    <ul>
+      <li><a href="privacy.html">Privacy notice</a></li>
+      <li><a href="#audit">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  var btn = document.querySelector('.menu-btn'), links = document.getElementById('navlinks');
+  btn.addEventListener('click', function(){
+    var open = links.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  links.addEventListener('click', function(e){ if(e.target.tagName === 'A'){ links.classList.remove('open'); btn.setAttribute('aria-expanded', false); } });
+
+  // Risk self-assessment
+  var risk = document.getElementById('riskForm');
+  risk.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!risk.checkValidity()){ risk.reportValidity(); return; }
+    var d = new FormData(risk);
+    var size = +d.get('q1'), score = (+d.get('q2')) + (+d.get('q3')) + (+d.get('q4'));
+    var band, title, text;
+    if(score <= 2){
+      band='green'; title='Green: well controlled';
+      text='Your controls look strong. An audit can confirm they hold at country level and help you keep evidence ready for UKVI.';
+    } else if(score <= 5){
+      band='amber'; title='Amber: gaps worth closing';
+      text='At least one stage relies on desk review or light-touch preparation. With the refusal limit now under 5%, a few avoidable cases could move you towards red.';
+    } else {
+      band='red'; title='Red: high exposure';
+      text='Several stages, from financial checks to student preparation, rely on desk review or nothing at all. We recommend a pre-CAS audit before your next intake.';
+    }
+    if(size === 3 && band !== 'green') text += ' At your intake size, even a 1–2% swing affects dozens of students.';
+    var box = document.getElementById('riskResult');
+    box.className = 'result show ' + band;
+    document.getElementById('riskTitle').textContent = title;
+    document.getElementById('riskText').textContent = text;
+    document.getElementById('riskRatingField').value = title;
+  });
+
+  // Audit form: posts to FormSubmit's AJAX endpoint; without JS it falls back to a normal POST + redirect
+  var form = document.getElementById('auditForm'), err = document.getElementById('formError');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    err.style.display = 'none';
+    if(!form.checkValidity()){ form.reportValidity(); return; }
+    var submit = form.querySelector('button[type=submit]');
+    submit.disabled = true; submit.textContent = 'Sending…';
+    var ajaxUrl = form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/');
+    fetch(ajaxUrl, { method:'POST', body:new FormData(form), headers:{'Accept':'application/json'} })
+      .then(function(r){ return r.json().then(function(j){ if(!r.ok || String(j.success) !== 'true') throw new Error(j.message || 'Something went wrong.'); }); })
+      .then(function(){
+        form.style.display = 'none';
+        var s = document.getElementById('success'); s.style.display = 'block'; s.focus();
+      })
+      .catch(function(ex){
+        err.textContent = (ex && ex.message && ex.message.indexOf('JSON') === -1 ? ex.message : 'We could not send your request.') + ' Please try again in a moment.';
+        err.style.display = 'block';
+        submit.disabled = false; submit.textContent = 'Request my audit';
+      });
+  });
+})();
+</script>
+</body>
+</html>
