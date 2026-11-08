@@ -1,0 +1,153 @@
+{
+ "title": "Completion-Readiness Programme",
+ "checked": "8 November 2026",
+ "passMark": 80,
+ "sections": [
+  {
+   "key": "law",
+   "label": "Overview of the law"
+  },
+  {
+   "key": "why",
+   "label": "Why the law exists"
+  },
+  {
+   "key": "know",
+   "label": "What you need to know"
+  },
+  {
+   "key": "able",
+   "label": "Prepare and be able to"
+  },
+  {
+   "key": "examples",
+   "label": "Examples"
+  },
+  {
+   "key": "activities",
+   "label": "Activities"
+  },
+  {
+   "key": "assessment",
+   "label": "Assessment"
+  },
+  {
+   "key": "workbook",
+   "label": "Workbook"
+  }
+ ],
+ "stages": [
+  {
+   "n": 1,
+   "title": "Visa readiness",
+   "when": "Within 10 days of your offer",
+   "modules": [
+    {
+     "id": "M1",
+     "title": "Your course, your plan",
+     "minutes": 60,
+     "summary": "Why UKVI must be satisfied you are a genuine student, and how to explain your choice of course, university and country honestly and clearly.",
+     "protects": "Visa refusal rate"
+    },
+    {
+     "id": "M2",
+     "title": "Money and documents that meet the rules",
+     "minutes": 60,
+     "summary": "The financial requirement for a Student visa, what evidence UKVI accepts, and how to plan fees for the whole course, not just year one.",
+     "protects": "Visa refusal rate"
+    },
+    {
+     "id": "M3",
+     "title": "Honest applications",
+     "minutes": 30,
+     "summary": "What counts as deception in a UK visa application, the long-term consequences, and how to protect yourself from agents who \"improve\" documents.",
+     "protects": "Visa refusal rate"
+    }
+   ],
+   "sessions": [
+    {
+     "title": "One-to-one mock credibility interview",
+     "minutes": 30,
+     "detail": "A 30-minute video call based on your own application, with feedback. Book it once you have passed Modules 1–3. Your study-plan statement from Module 1 is used to prepare."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Pre-departure",
+   "when": "2–4 weeks before you travel",
+   "modules": [
+    {
+     "id": "M4",
+     "title": "Your visa conditions",
+     "minutes": 60,
+     "summary": "The conditions attached to your Student visa: work limits, study and attendance, reporting changes, your eVisa, and what happens if conditions are broken.",
+     "protects": "Completion rate and sponsor duties"
+    },
+    {
+     "id": "M5",
+     "title": "Arrive and enrol",
+     "minutes": 45,
+     "summary": "When you can travel, what Border Force may ask, how to enrol on time, and what to do if you are delayed.",
+     "protects": "Enrolment rate"
+    },
+    {
+     "id": "M6",
+     "title": "Managing money in the UK",
+     "minutes": 60,
+     "summary": "Budgeting, renting legally, fee instalments, currency risk, and the scams and money-mule schemes that target new international students.",
+     "protects": "Completion rate"
+    },
+    {
+     "id": "M7",
+     "title": "Studying in the UK",
+     "minutes": 90,
+     "summary": "How UK university teaching and assessment work, referencing and academic integrity, the rules on AI tools and essay mills, and how to get help early.",
+     "protects": "Completion rate"
+    },
+    {
+     "id": "M8",
+     "title": "Wellbeing, safety and settling in",
+     "minutes": 45,
+     "summary": "Your right to NHS care, laws that protect you and laws that can catch you out, and where to get help when things go wrong.",
+     "protects": "Completion rate"
+    }
+   ],
+   "sessions": [
+    {
+     "title": "Live pre-departure briefing",
+     "minutes": 60,
+     "detail": "A group webinar with our team and current students. Bring your questions from Modules 4–8. Recorded if you cannot attend."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "First-term support",
+   "when": "Weeks 2–12 after arrival",
+   "modules": [],
+   "sessions": [
+    {
+     "title": "Check-in 1, week 2: Settling in",
+     "minutes": 30,
+     "detail": "Enrolment, accommodation, bank account and GP. Have your Module 5 arrival plan and Module 8 support map ready."
+    },
+    {
+     "title": "Check-in 2, week 6: First assessments",
+     "minutes": 30,
+     "detail": "Attendance, first coursework and working hours. Have your Module 4 work plan and Module 7 study plan ready."
+    },
+    {
+     "title": "End-of-term review, weeks 11–12",
+     "minutes": 45,
+     "detail": "Results so far, plans for next term, and your year-two fee plan from Module 2 checked against exchange rates."
+    },
+    {
+     "title": "Peer circles (optional)",
+     "minutes": 90,
+     "detail": "Two 45-minute small-group sessions with students from similar backgrounds."
+    }
+   ]
+  }
+ ]
+}
