@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2-minute survey: African student compliance and completion | African Students Centre</title>
+<meta name="description" content="A two-minute survey for UK university teams on where admitting African students creates the most compliance and completion pressure.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23051912'/%3E%3Cpath d='M16 5l9 4v6c0 6-4 10-9 12-5-2-9-6-9-12V9z' fill='%2310b981'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#051912;--card:#0b2b20;--surface:#123d2e;--line:#1e4d3d;
+  --green:#10b981;--neon:#34d399;--glow:rgba(16,185,129,.15);
+  --text:#f8fafc;--muted:#a7b6c8;--red:#f87171;
+  --font:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --ease:.2s cubic-bezier(.4,0,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--neon)}
+:focus-visible{outline:2px solid var(--neon);outline-offset:3px;border-radius:4px}
+[hidden]{display:none!important}
+.wrap{max-width:760px;margin:0 auto;padding:0 1.25rem}
+header{position:sticky;top:0;background:rgba(5,25,18,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}
+.bar{display:flex;justify-content:space-between;align-items:center;height:64px;gap:1rem}
+.logo{display:flex;align-items:center;gap:.6rem;color:var(--text);text-decoration:none;font-weight:800;letter-spacing:-.02em}
+.logo small{display:block;font-size:.66rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.count{font-size:.85rem;color:var(--muted);white-space:nowrap}
+.progress{height:3px;background:var(--line)}
+.progress span{display:block;height:100%;width:0;background:var(--green);transition:width var(--ease)}
+
+.intro{padding:56px 0 28px}
+.eyebrow{display:inline-block;font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--neon);margin-bottom:.8rem}
+h1{font-size:clamp(1.7rem,4.2vw,2.4rem);line-height:1.18;letter-spacing:-.02em;font-weight:800;margin-bottom:1rem}
+.lead{color:var(--muted);font-size:1.04rem}
+.lead + .lead{margin-top:.75rem}
+.facts{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem}
+.facts span{background:var(--surface);border:1px solid var(--line);border-radius:50px;padding:.3rem .85rem;font-size:.8rem;color:var(--muted)}
+
+fieldset{border:1px solid var(--line);background:var(--card);border-radius:14px;padding:1.4rem 1.4rem 1.2rem;margin-bottom:1rem}
+legend{float:left;width:100%;font-weight:700;font-size:1.04rem;line-height:1.4;margin-bottom:.35rem}
+legend .n{color:var(--neon);margin-right:.4rem}
+.hint{clear:both;color:var(--muted);font-size:.86rem;margin-bottom:.8rem}
+.opts{clear:both;display:grid;gap:.5rem}
+.opts.two{grid-template-columns:1fr 1fr}
+.opt{display:flex;gap:.7rem;align-items:flex-start;padding:.65rem .85rem;border:1px solid var(--line);border-radius:10px;cursor:pointer;transition:var(--ease);font-size:.95rem}
+.opt:hover{border-color:var(--green)}
+.opt input{margin-top:.28rem;accent-color:var(--green);flex:none;width:16px;height:16px}
+.opt:has(input:checked){border-color:var(--green);background:var(--surface)}
+.scale{clear:both;display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem}
+.scale .opt{flex-direction:column;align-items:center;text-align:center;gap:.3rem;padding:.7rem .3rem}
+.scale .opt input{margin:0}
+.scale-ends{display:flex;justify-content:space-between;font-size:.8rem;color:var(--muted);margin-top:.4rem}
+label.field{display:block;font-weight:600;font-size:.9rem;margin:.2rem 0 .35rem}
+label.field .opt-tag{font-weight:400;color:var(--muted)}
+input[type=text],input[type=email],textarea{width:100%;font:400 .98rem/1.4 var(--font);color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:.7rem .85rem;margin-bottom:.8rem}
+input[type=text]:focus,input[type=email]:focus,textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px var(--glow)}
+textarea{min-height:84px;resize:vertical}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 .8rem}
+.check{display:flex;gap:.6rem;align-items:flex-start;font-size:.92rem;color:var(--muted);margin-top:.2rem}
+.check input{margin-top:.3rem;accent-color:var(--green)}
+.err{clear:both;color:var(--red);font-size:.86rem;margin-top:.6rem}
+fieldset.invalid{border-color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.9rem 1.6rem;border-radius:10px;font:600 1rem/1.2 var(--font);cursor:pointer;border:0;background:linear-gradient(135deg,#059669,#10b981);color:#fff;box-shadow:0 4px 20px rgba(16,185,129,.3);transition:var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn[disabled]{opacity:.6;cursor:wait;transform:none}
+.submit{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;margin:1.4rem 0 .8rem}
+.small{font-size:.84rem;color:var(--muted)}
+.form-error{background:rgba(248,113,113,.1);border:1px solid var(--red);color:var(--text);border-radius:10px;padding:.8rem 1rem;margin-top:1rem}
+.honey{position:absolute;left:-9999px}
+.done{text-align:center;padding:64px 0}
+.done .tick{width:64px;height:64px;border-radius:50%;background:var(--surface);border:1px solid var(--green);display:grid;place-items:center;margin:0 auto 1.4rem;color:var(--neon);font-size:1.8rem}
+.done p{color:var(--muted);max-width:560px;margin:0 auto .8rem}
+footer{border-top:1px solid var(--line);margin-top:48px;padding:1.6rem 0;color:var(--muted);font-size:.84rem}
+footer a{color:var(--muted)}
+@media (max-width:620px){
+  .opts.two,.grid2{grid-template-columns:1fr}
+  .scale{gap:.3rem}
+  .scale .opt{font-size:.78rem}
+  fieldset{padding:1.1rem 1rem 1rem}
+  .count{display:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="/" aria-label="African Students Centre home">
+      <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#123d2e"/><path d="M16 5l9 4v6c0 6-4 10-9 12-5-2-9-6-9-12V9z" fill="#10b981"/><path d="M12 16l3 3 5-6" stroke="#051912" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>African Students Centre<small>University survey</small></span>
+    </a>
+    <span class="count" id="count" aria-live="polite">0 of 10 answered</span>
+  </div>
+  <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+</header>
+
+<main class="wrap" id="main">
+  <section class="intro">
+    <span class="eyebrow">2-minute survey · 10 questions</span>
+    <h1>Where does admitting African students put the most pressure on your university?</h1>
+    <p class="lead">From 1 June 2026, UKVI's Basic Compliance Assessment allows a visa refusal rate of under 5% and expects at least 95% of CAS holders to enrol. The course completion threshold of 85% rises to 90% from 1 June 2027. A small number of avoidable cases can now move a sponsor towards amber or red.</p>
+    <p class="lead">We're asking UK university teams where the pressure really sits, so the support we provide matches it. Most questions are one click. No answer is shared with UKVI or with other universities.</p>
+    <div class="facts"><span>About 2 minutes</span><span>Tick-box answers</span><span>Summary of findings on request</span></div>
+  </section>
+
+  <form id="survey" action="https://formsubmit.co/3ea7073fef8e24e8899c5cc600bb72a7" method="post" novalidate>
+    <input type="hidden" name="_subject" value="University survey response: africanstudentscentre.com">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://africanstudentscentre.com/thank-you.html">
+    <div class="honey" aria-hidden="true"><input type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
+
+    <fieldset data-q="role" data-required>
+      <legend><span class="n">1.</span>What is your role?</legend>
+      <div class="opts two">
+        <label class="opt"><input type="radio" name="1. Role" value="Visa or immigration compliance">Visa or immigration compliance</label>
+        <label class="opt"><input type="radio" name="1. Role" value="Admissions">Admissions</label>
+        <label class="opt"><input type="radio" name="1. Role" value="International recruitment">International recruitment</label>
+        <label class="opt"><input type="radio" name="1. Role" value="Student support or welfare">Student support or welfare</label>
+        <label class="opt"><input type="radio" name="1. Role" value="Senior leadership">Senior leadership</label>
+        <label class="opt"><input type="radio" name="1. Role" value="Other">Other</label>
+      </div>
+    </fieldset>
+
+    <fieldset data-q="bca" data-required>
+      <legend><span class="n">2.</span>How do you feel about your next BCA review?</legend>
+      <div class="opts">
+        <label class="opt"><input type="radio" name="2. BCA position" value="Comfortable on all three measures">Comfortable on all three measures</label>
+        <label class="opt"><input type="radio" name="2. BCA position" value="Close to a threshold on at least one measure">Close to a threshold on at least one measure</label>
+        <label class="opt"><input type="radio" name="2. BCA position" value="Already amber or red on at least one measure">Already amber or red on at least one measure</label>
+        <label class="opt"><input type="radio" name="2. BCA position" value="Not sure">Not sure</label>
+      </div>
+    </fieldset>
+
+    <fieldset data-q="measures" data-required>
+      <legend><span class="n">3.</span>Which measures worry you most?</legend>
+      <p class="hint">Tick all that apply.</p>
+      <div class="opts">
+        <label class="opt"><input type="checkbox" name="3. Measures of concern" value="Visa refusals (limit under 5%)">Visa refusals (limit: under 5%)</label>
+        <label class="opt"><input type="checkbox" name="3. Measures of concern" value="Enrolment (95% of CAS holders)">Enrolment (target: 95% of CAS holders enrol)</label>
+        <label class="opt"><input type="checkbox" name="3. Measures of concern" value="Course completion (85%, rising to 90% from June 2027)">Course completion (85%, rising to 90% from June 2027)</label>
+        <label class="opt"><input type="checkbox" name="3. Measures of concern" value="None at the moment" data-exclusive>None at the moment</label>
+      </div>
+    </fieldset>
+
+    <fieldset data-q="pains" data-required>
+      <legend><span class="n">4.</span>With applicants and students from Africa, where do problems most often show up?</legend>
+      <p class="hint">Tick all that apply.</p>
+      <div class="opts">
+        <label class="opt"><input type="checkbox" name="4. Where problems show up" value="Bank statements or financial evidence that fail the rules or can't be verified">Bank statements or financial evidence that fail the rules or can't be verified</label>
+        <label class="opt"><input type="checkbox" name="4. Where problems show up" value="Weak answers at credibility interviews">Weak answers at credibility interviews</label>
+        <label class="opt"><input type="checkbox" name="4. Where problems show up" value="Agent-prepared applications with errors or misrepresentation">Agent-prepared applications with errors or misrepresentation</label>
+        <label class="opt"><input type="checkbox" name="4. Where problems show up" value="CAS issued, then the student doesn't enrol">CAS issued, then the student doesn't enrol</label>
+        <label class="opt"><input type="checkbox" name="4. Where problems show up" value="Late arrival or missed registration">Late arrival or missed registration</label>
+        <label class="opt"><input type="checkbox" name="4. Where problems show up" value="Attendance, working hours or engagement after arrival">Attendance, working hours or engagement after arrival</label>
+        <label class="opt"><input type="checkbox" name="4. Where problems show up" value="Withdrawal or non-completion in the first year">Withdrawal or non-completion in the first year</label>
+      </div>
+    </fieldset>
+
+    <fieldset data-q="time" data-required>
+      <legend><span class="n">5.</span>How much staff time does checking and chasing these students take each intake?</legend>
+      <div class="opts two">
+        <label class="opt"><input type="radio" name="5. Staff time per intake" value="Under 1 day">Under 1 day</label>
+        <label class="opt"><input type="radio" name="5. Staff time per intake" value="1 to 5 days">1 to 5 days</label>
+        <label class="opt"><input type="radio" name="5. Staff time per intake" value="1 to 4 weeks">1 to 4 weeks</label>
+        <label class="opt"><input type="radio" name="5. Staff time per intake" value="More than a month">More than a month</label>
+        <label class="opt"><input type="radio" name="5. Staff time per intake" value="Don't know">Don't know</label>
+      </div>
+    </fieldset>
+
+    <fieldset data-q="countries" data-required>
+      <legend><span class="n">6.</span>Which countries do most of your African students come from?</legend>
+      <p class="hint">Tick all that apply.</p>
+      <div class="opts two">
+        <label class="opt"><input type="checkbox" name="6. Source countries" value="Nigeria">Nigeria</label>
+        <label class="opt"><input type="checkbox" name="6. Source countries" value="Ghana">Ghana</label>
+        <label class="opt"><input type="checkbox" name="6. Source countries" value="Kenya">Kenya</label>
+        <label class="opt"><input type="checkbox" name="6. Source countries" value="Zimbabwe">Zimbabwe</label>
+        <label class="opt"><input type="checkbox" name="6. Source countries" value="Cameroon">Cameroon</label>
+        <label class="opt"><input type="checkbox" name="6. Source countries" value="Other African countries">Other African countries</label>
+      </div>
+    </fieldset>
+
+    <fieldset data-q="help" data-required>
+      <legend><span class="n">7.</span>Which kinds of support would take the most pressure off your team?</legend>
+      <p class="hint">Tick up to three.</p>
+      <div class="opts" data-max="3">
+        <label class="opt"><input type="checkbox" name="7. Most useful support" value="Independent checks of documents and funds before CAS">Independent checks of documents and funds before CAS</label>
+        <label class="opt"><input type="checkbox" name="7. Most useful support" value="Mock credibility interviews with feedback">Mock credibility interviews with feedback</label>
+        <label class="opt"><input type="checkbox" name="7. Most useful support" value="Online course for offer-holders on UK visa, money, work and attendance rules">Online course for offer-holders on UK visa, money, work and attendance rules</label>
+        <label class="opt"><input type="checkbox" name="7. Most useful support" value="Pre-departure preparation and arrival support">Pre-departure preparation and arrival support</label>
+        <label class="opt"><input type="checkbox" name="7. Most useful support" value="First-term check-ins to catch problems early">First-term check-ins to catch problems early</label>
+        <label class="opt"><input type="checkbox" name="7. Most useful support" value="Cohort readiness reports for the compliance team">Cohort readiness reports for the compliance team</label>
+      </div>
+    </fieldset>
+
+    <fieldset data-q="value" data-required>
+      <legend><span class="n">8.</span>How useful would a required readiness course for offer-holders be, with each student's progress and scores reported to your team?</legend>
+      <div class="scale">
+        <label class="opt"><input type="radio" name="8. Usefulness of readiness course (1-5)" value="1">1</label>
+        <label class="opt"><input type="radio" name="8. Usefulness of readiness course (1-5)" value="2">2</label>
+        <label class="opt"><input type="radio" name="8. Usefulness of readiness course (1-5)" value="3">3</label>
+        <label class="opt"><input type="radio" name="8. Usefulness of readiness course (1-5)" value="4">4</label>
+        <label class="opt"><input type="radio" name="8. Usefulness of readiness course (1-5)" value="5">5</label>
+      </div>
+      <div class="scale-ends"><span>Not useful</span><span>Very useful</span></div>
+    </fieldset>
+
+    <fieldset data-q="pay" data-required>
+      <legend><span class="n">9.</span>If you used student training like this, how would you prefer it to be paid for?</legend>
+      <div class="opts">
+        <label class="opt"><input type="radio" name="9. Preferred payment model" value="University pays per student (access codes for each cohort)">University pays per student (access codes for each cohort)</label>
+        <label class="opt"><input type="radio" name="9. Preferred payment model" value="University pays an annual licence covering all offer-holders">University pays an annual licence covering all offer-holders</label>
+        <label class="opt"><input type="radio" name="9. Preferred payment model" value="Students pay, and the university recommends or requires it">Students pay, and the university recommends or requires it</label>
+        <label class="opt"><input type="radio" name="9. Preferred payment model" value="Shared: the university part-funds and students pay the rest">Shared: the university part-funds and students pay the rest</label>
+        <label class="opt"><input type="radio" name="9. Preferred payment model" value="We'd want a pilot before deciding">We'd want a pilot before deciding</label>
+      </div>
+    </fieldset>
+
+    <fieldset data-q="next" data-required>
+      <legend><span class="n">10.</span>Would you like to see how this could work for your next intake?</legend>
+      <div class="opts">
+        <label class="opt"><input type="radio" name="10. Next step" value="Yes: discuss a pilot for our next intake">Yes, let's discuss a pilot for our next intake</label>
+        <label class="opt"><input type="radio" name="10. Next step" value="Send me more information">Send me more information</label>
+        <label class="opt"><input type="radio" name="10. Next step" value="Not right now">Not right now</label>
+      </div>
+    </fieldset>
+
+    <fieldset data-q="contact">
+      <legend>Your details</legend>
+      <p class="hint" id="contactHint">Your university's name helps us read the results. Your name and email are only needed if you'd like us to follow up.</p>
+      <label class="field" for="challenge">The biggest challenge in one sentence <span class="opt-tag">(optional)</span></label>
+      <textarea id="challenge" name="Biggest challenge" maxlength="600" placeholder="e.g. Students who pass the visa stage but stop engaging by November"></textarea>
+      <label class="field" for="uni">University</label>
+      <input type="text" id="uni" name="University" maxlength="120" autocomplete="organization" required>
+      <div class="grid2">
+        <div>
+          <label class="field" for="name">Your name <span class="opt-tag" id="nameTag">(optional)</span></label>
+          <input type="text" id="name" name="Name" maxlength="100" autocomplete="name">
+        </div>
+        <div>
+          <label class="field" for="email">Work email <span class="opt-tag" id="emailTag">(optional)</span></label>
+          <input type="email" id="email" name="email" maxlength="160" autocomplete="email">
+        </div>
+      </div>
+      <label class="check"><input type="checkbox" name="Wants summary of findings" value="Yes">Send me a summary of the survey findings</label>
+      <p class="err" id="contactErr" hidden></p>
+    </fieldset>
+
+    <div class="submit">
+      <button class="btn" type="submit" id="send">Send my answers</button>
+      <span class="small">We use your answers only to understand university needs and follow up if you ask us to. See our <a href="/privacy.html">privacy notice</a>.</span>
+    </div>
+    <div class="form-error" id="formError" role="alert" hidden></div>
+  </form>
+
+  <section class="done" id="done" tabindex="-1" hidden>
+    <div class="tick" aria-hidden="true">✓</div>
+    <h1>Thank you</h1>
+    <p>Your answers have been sent. If you asked us to follow up, we'll be in touch within two working days.</p>
+    <p>Meanwhile, you can see the <a href="/training.html">student training curriculum</a> or <a href="/">how pre-CAS verification works</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 African Students Centre · <a href="/">Home</a> · <a href="/privacy.html">Privacy notice</a></div>
+</footer>
+
+<script>
+(function(){
+  var form = document.getElementById('survey');
+  var sets = [].slice.call(form.querySelectorAll('fieldset[data-required]'));
+  var total = sets.length;
+
+  function answered(fs){ return !!fs.querySelector('input:checked'); }
+  function wantsFollowUp(){
+    var n = form.querySelector('input[name="10. Next step"]:checked');
+    var s = form.querySelector('input[name="Wants summary of findings"]');
+    return (n && n.value !== 'Not right now') || s.checked;
+  }
+  function update(){
+    var done = sets.filter(answered).length;
+    document.getElementById('count').textContent = done + ' of ' + total + ' answered';
+    document.getElementById('progress').style.width = (done / total * 100) + '%';
+    var need = wantsFollowUp();
+    document.getElementById('email').required = need;
+    document.getElementById('emailTag').textContent = need ? '(needed to follow up)' : '(optional)';
+    document.getElementById('contactHint').textContent = need
+      ? 'Leave your work email so we can follow up. Your university\'s name helps us read the results.'
+      : 'Your university\'s name helps us read the results. Your name and email are only needed if you\'d like us to follow up.';
+  }
+
+  form.addEventListener('change', function(e){
+    var t = e.target;
+    if (t.type === 'checkbox' && t.checked) {
+      var group = t.closest('.opts');
+      if (group) {
+        // "None at the moment" clears the others, and the others clear it
+        var boxes = [].slice.call(group.querySelectorAll('input[type=checkbox]'));
+        if (t.hasAttribute('data-exclusive')) boxes.forEach(function(b){ if (b !== t) b.checked = false; });
+        else boxes.forEach(function(b){ if (b.hasAttribute('data-exclusive')) b.checked = false; });
+        var max = Number(group.getAttribute('data-max'));
+        if (max && boxes.filter(function(b){ return b.checked; }).length > max) {
+          t.checked = false;
+          showErr(t.closest('fieldset'), 'Please choose up to ' + max + '.');
+          return;
+        }
+      }
+    }
+    var fs = t.closest('fieldset');
+    if (fs) { fs.classList.remove('invalid'); var m = fs.querySelector('.err.q'); if (m) m.remove(); }
+    update();
+  });
+
+  function showErr(fs, text){
+    fs.classList.add('invalid');
+    var m = fs.querySelector('.err.q');
+    if (!m) { m = document.createElement('p'); m.className = 'err q'; fs.appendChild(m); }
+    m.textContent = text;
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var formErr = document.getElementById('formError'); formErr.hidden = true;
+    var first = null;
+    sets.forEach(function(fs){ if (!answered(fs)) { showErr(fs, 'Please choose an answer.'); first = first || fs; } });
+    var cErr = document.getElementById('contactErr'), uni = document.getElementById('uni'), email = document.getElementById('email');
+    cErr.hidden = true;
+    var contactFs = uni.closest('fieldset'); contactFs.classList.remove('invalid');
+    if (!uni.value.trim()) { cErr.textContent = 'Please add your university.'; cErr.hidden = false; contactFs.classList.add('invalid'); first = first || contactFs; }
+    else if (email.required && !email.value.trim()) { cErr.textContent = 'Please add your work email so we can follow up.'; cErr.hidden = false; contactFs.classList.add('invalid'); first = first || contactFs; }
+    else if (email.value && !email.checkValidity()) { cErr.textContent = 'Please check your email address.'; cErr.hidden = false; contactFs.classList.add('invalid'); first = first || contactFs; }
+    if (first) { first.scrollIntoView({behavior:'smooth', block:'center'}); return; }
+
+    // Join multi-select answers into one line each so the email table stays readable
+    var data = new FormData(form), out = new FormData();
+    data.forEach(function(v, k){ out.has(k) ? out.set(k, out.get(k) + '; ' + v) : out.append(k, v); });
+
+    var btn = document.getElementById('send');
+    btn.disabled = true; btn.textContent = 'Sending…';
+    fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {method:'POST', body:out, headers:{'Accept':'application/json'}})
+      .then(function(r){ return r.json().then(function(j){ if (!r.ok || String(j.success) !== 'true') throw new Error(j.message || ''); }); })
+      .then(function(){
+        form.hidden = true;
+        document.querySelector('.intro').hidden = true;
+        document.getElementById('progress').style.width = '100%';
+        var d = document.getElementById('done'); d.hidden = false; d.focus(); window.scrollTo(0, 0);
+      })
+      .catch(function(){
+        formErr.textContent = 'We could not send your answers. Please try again in a moment, or use the contact form on our home page.';
+        formErr.hidden = false;
+        btn.disabled = false; btn.textContent = 'Send my answers';
+      });
+  });
+
+  update();
+})();
+</script>
+</body>
+</html>
