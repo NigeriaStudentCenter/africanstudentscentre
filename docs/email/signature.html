@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Email signature | African Students Centre</title>
+<style>
+  body{margin:0;background:#f1f5f4;font-family:Inter,"Segoe UI",Arial,sans-serif;color:#0f172a}
+  .page{max-width:720px;margin:40px auto;padding:0 20px}
+  h1{font-size:20px;margin:0 0 6px}
+  p.note{color:#475569;font-size:14px;margin:0 0 20px}
+  .card{background:#fff;border:1px solid #dbe4e1;border-radius:12px;padding:28px}
+  .bar{display:flex;gap:10px;align-items:center;margin:18px 0 8px;flex-wrap:wrap}
+  button{font:600 14px/1 inherit;background:#059669;color:#fff;border:0;border-radius:8px;padding:11px 16px;cursor:pointer}
+  button.alt{background:#fff;color:#0f172a;border:1px solid #cbd5e1}
+  #status{font-size:13px;color:#059669}
+  ol{color:#334155;font-size:14px;line-height:1.7;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>African Students Centre email signature</h1>
+  <p class="note">Copy the signature below and paste it into Outlook's signature settings.</p>
+
+  <div class="card">
+<!-- SIGNATURE START -->
+<div id="signature">
+<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;color:#0f172a;">
+  <tr>
+    <td valign="top" style="padding:2px 16px 0 0;">
+      <a href="https://africanstudentscentre.com/" style="text-decoration:none;"><img src="https://africanstudentscentre.com/email/logo.png" width="64" height="64" alt="African Students Centre" style="display:block;border:0;width:64px;height:64px;border-radius:12px;"></a>
+    </td>
+    <td valign="top" style="border-left:3px solid #10b981;padding:0 0 0 16px;">
+      <div style="font-size:16px;line-height:20px;font-weight:bold;color:#0b2b20;">John Aikeremiokha</div>
+      <div style="font-size:13px;line-height:19px;color:#475569;">Director, African Students Centre</div>
+      <div style="font-size:12px;line-height:18px;color:#059669;font-weight:bold;padding-top:4px;">Pre-CAS verification &amp; completion training for UK universities</div>
+      <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;margin-top:10px;">
+        <tr>
+          <td style="background:#0b2b20;border-radius:6px;padding:6px 11px;">
+            <a href="https://africanstudentscentre.com/" style="font-size:12px;line-height:14px;font-weight:bold;color:#ffffff;text-decoration:none;">Website</a>
+          </td>
+          <td style="width:6px;font-size:0;line-height:0;">&nbsp;</td>
+          <td style="background:#10b981;border-radius:6px;padding:6px 11px;">
+            <a href="https://africanstudentscentre.com/training.html" style="font-size:12px;line-height:14px;font-weight:bold;color:#ffffff;text-decoration:none;">Student training curriculum</a>
+          </td>
+          <td style="width:6px;font-size:0;line-height:0;">&nbsp;</td>
+          <td style="border:1px solid #10b981;border-radius:6px;padding:5px 10px;">
+            <a href="https://africanstudentscentre.com/#audit" style="font-size:12px;line-height:14px;font-weight:bold;color:#047857;text-decoration:none;">Book an audit</a>
+          </td>
+        </tr>
+      </table>
+      <div style="font-size:11px;line-height:16px;color:#64748b;padding-top:8px;"><a href="https://africanstudentscentre.com/" style="color:#64748b;text-decoration:none;">africanstudentscentre.com</a></div>
+    </td>
+  </tr>
+</table>
+</div>
+<!-- SIGNATURE END -->
+  </div>
+
+  <div class="bar">
+    <button id="copy" type="button">Copy signature</button>
+    <button id="copyHtml" class="alt" type="button">Copy HTML code</button>
+    <span id="status" role="status"></span>
+  </div>
+
+  <ol>
+    <li>Click <strong>Copy signature</strong>.</li>
+    <li>In Outlook on the web: <strong>Settings</strong> (gear) → <strong>Account</strong> → <strong>Signatures</strong> → <strong>New signature</strong>. Name it "African Students Centre" and paste into the box.</li>
+    <li>Choose it as the default for new messages and replies, then <strong>Save</strong>.</li>
+    <li>In new Outlook for Mac or Windows it's the same: <strong>Settings</strong> → <strong>Account</strong> → <strong>Signatures</strong>.</li>
+  </ol>
+</div>
+<script>
+  var sig = document.getElementById('signature'), status = document.getElementById('status');
+  function done(msg){ status.textContent = msg; setTimeout(function(){ status.textContent = ''; }, 4000); }
+  document.getElementById('copy').onclick = function(){
+    var html = sig.innerHTML, text = sig.innerText;
+    if (navigator.clipboard && window.ClipboardItem) {
+      navigator.clipboard.write([new ClipboardItem({'text/html': new Blob([html], {type:'text/html'}), 'text/plain': new Blob([text], {type:'text/plain'})})])
+        .then(function(){ done('Copied. Now paste it into Outlook.'); }, fallback);
+    } else fallback();
+    function fallback(){
+      var r = document.createRange(); r.selectNodeContents(sig);
+      var s = getSelection(); s.removeAllRanges(); s.addRange(r);
+      document.execCommand('copy'); s.removeAllRanges(); done('Copied. Now paste it into Outlook.');
+    }
+  };
+  document.getElementById('copyHtml').onclick = function(){
+    navigator.clipboard.writeText(sig.innerHTML.trim()).then(function(){ done('HTML code copied.'); });
+  };
+</script>
+</body>
+</html>
